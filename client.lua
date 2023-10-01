@@ -7,20 +7,21 @@ local blip = {}
 CreateThread(function()
     ESX.Streaming.RequestStreamedTextureDict("DIA_CLIFFORD")
 
-    ESX.PlayAnim = function(dict, anim, speed, time, flag)
-        ESX.Streaming.RequestAnimDict(dict, function()
-            TaskPlayAnim(PlayerPedId(), dict, anim, speed, speed, time, flag, 1,
-                         false, false, false)
-        end)
-    end
-
-    ESX.PlayAnimOnPed = function(ped, dict, anim, speed, time, flag)
-        ESX.Streaming.RequestAnimDict(dict, function()
-            TaskPlayAnim(ped, dict, anim, speed, speed, time, flag, 1, false,
-                         false, false)
-        end)
-    end
 end)
+
+local PlayAnim = function(dict, anim, speed, time, flag)
+    ESX.Streaming.RequestAnimDict(dict, function()
+        TaskPlayAnim(PlayerPedId(), dict, anim, speed, speed, time, flag, 1,
+                     false, false, false)
+    end)
+end
+
+local PlayAnimOnPed = function(ped, dict, anim, speed, time, flag)
+    ESX.Streaming.RequestAnimDict(dict, function()
+        TaskPlayAnim(ped, dict, anim, speed, speed, time, flag, 1, false,
+                     false, false)
+    end)
+end
 
 local MakeEntityFaceEntity = function(entity1, entity2)
     local p1 = GetEntityCoords(entity1, true)
@@ -49,8 +50,8 @@ local dostarczPake = function()
                             true)
         AttachEntityToEntity(obj2, nowyped, GetPedBoneIndex(nowyped, 57005),
                              0.13, 0.02, 0.0, -90.0, 0, 0, 1, 1, 0, 1, 0, 1)
-        ESX.PlayAnim("mp_common", "givetake1_a", 8.0, -1, 0)
-        ESX.PlayAnimOnPed(nowyped, "mp_common", "givetake1_a", 8.0, -1, 0)
+        PlayAnim("mp_common", "givetake1_a", 8.0, -1, 0)
+        PlayAnimOnPed(nowyped, "mp_common", "givetake1_a", 8.0, -1, 0)
         Wait(1000)
         AttachEntityToEntity(obj2, PlayerPedId(),
                              GetPedBoneIndex(PlayerPedId(), 57005), 0.13, 0.02,
