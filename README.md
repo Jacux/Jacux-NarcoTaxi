@@ -11,7 +11,7 @@
 
 ## Need Support?
 
-Contant on discord: Jacux
+Contact on discord: Jacux
 
 ## License
 
