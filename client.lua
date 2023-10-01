@@ -61,7 +61,7 @@ local dostarczPake = function()
         DeleteEntity(obj)
         DeleteEntity(obj2)
         SetPedAsNoLongerNeeded(nowyped)
-        TriggerServerEvent("carism_narcoTaxi:pay")
+        TriggerServerEvent("Jacux_NarcoTaxi:pay")
         if blip and DoesBlipExist(blip) then
             RemoveBlip(blip)
             blip = {}
