@@ -11,7 +11,7 @@
 
 ## Need Support?
 
-<div align='center'><h3><a href='https://discord.gg/jTDM5Ndyjs'>Discord Server!</a></h3></div>
+<div align='left'><h3><a href='https://discord.gg/jTDM5Ndyjs'>Discord Server!</a></h3></div>
 
 ## License
 
