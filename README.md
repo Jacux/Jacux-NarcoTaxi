@@ -2,8 +2,8 @@
 
 ## Description
    
-<p>Script for taking orders and delivering NPC drugs</p>.
-<p>The script was created for the Carism server</p>.
+<p>Script for taking orders and delivering NPC drugs</p>
+<p>The script was created for the Carism server</p>
 
 ## Supported Frameworks
 
