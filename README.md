@@ -2,8 +2,8 @@
 
 ## Description
    
-<p>Skrypt na przyjmowanie zleceń i dostarczanie narkotyków NPC</p>
-<p>Skrypt został stworzony dla serwera Carism</p>
+<p>Script for taking orders and delivering NPC drugs</p>.
+<p>The script was created for the Carism server</p>.
 
 ## Supported Frameworks
 
